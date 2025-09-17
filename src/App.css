@@ -1,0 +1,42 @@
+.cards__container{
+    margin-top: var(--space-1100);
+}
+
+@media (min-width:42rem) {
+    .cards__container{
+        display: grid;
+        grid-template-areas: 
+        "name name"
+        "cards cards";
+    }
+
+    .card-name-wrapper{
+        grid-area: name;
+    }
+
+    .card-list-wrapper{
+        grid-area: cards;
+    }
+}
+
+
+@media (min-width:62.5rem) {
+    .cards__container{
+        max-width: 100rem;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "name cards"
+        "name cards";
+        gap: var(--space-500);
+    }
+
+    .card-name-wrapper{
+        grid-area: name;
+    }
+
+    .card-list-wrapper{
+        grid-area: cards;
+    }
+}

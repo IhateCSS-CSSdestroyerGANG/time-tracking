@@ -1,0 +1,22 @@
+.card__list{
+    width: 85%;
+    margin: auto;
+    margin-top: var(--space-500);
+    display: grid;
+    gap: var(--space-500);
+}
+
+
+@media (min-width:42rem) {
+    .card__list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:62.5rem) {
+    .card__list{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        width: 100%;
+    }
+}
